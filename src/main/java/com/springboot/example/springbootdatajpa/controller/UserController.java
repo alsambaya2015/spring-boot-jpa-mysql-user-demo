@@ -28,14 +28,15 @@ public class UserController {
   public User update(@PathVariable("user_id") Long userId, @RequestBody User userObject) {
     User user = userRepository.getOne(userId);
     user.setName(userObject.getName());
+    user.setCity(userObject.getCity());
     user.setCountry(userObject.getCountry());
+    user.setEmail(userObject.getEmail());
     return userRepository.save(user);
   }
 
   @DeleteMapping("/users/{user_id}")
   public List<User> delete(@PathVariable("user_id") Long userId) {
     userRepository.deleteById(userId);
-    // userRepository.delete(userId);
     return userRepository.findAll();
   }
 
