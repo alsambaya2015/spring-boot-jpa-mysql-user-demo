@@ -35,7 +35,6 @@ public class UserController {
   @DeleteMapping("/users/{user_id}")
   public List<User> delete(@PathVariable("user_id") Long userId) {
     userRepository.deleteById(userId);
-    // userRepository.delete(userId);
     return userRepository.findAll();
   }
 
