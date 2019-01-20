@@ -8,11 +8,11 @@ MySQL – Represents the maven dependency for mysql-jdbc-connector
 We will do CRUD related operations with a user object and ultimately we will build a REST api application with five endpoints
 for CRUD related operations.
 
-* HTTP POST      /api/users              For creating the user
-* HTTP PUT       /api/users              For updating the user
-* HTTP DELETE    /api/users/:user_id     For deleting the user
-* HTTP GET       /api/users              For retrieving all the users
-* HTTP GET       /api/users/email/:email For retrieving all users with email like :email
+* HTTP POST      /api/users     ---------         For creating the user
+* HTTP PUT       /api/users     ---------         For updating the user
+* HTTP DELETE    /api/users/:user_id ------    For deleting the user
+* HTTP GET       /api/users      ------        For retrieving all the users
+* HTTP GET       /api/users/email/:email  ---- For retrieving all users with email like :email
 
 You are required to create the:
    * User Entity which lives in between java object (java class) and relational table.
